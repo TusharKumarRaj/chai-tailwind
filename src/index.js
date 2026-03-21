@@ -1,24 +1,16 @@
 import { scanDOM } from "./core/scanner.js";
 import { applyStyles } from "./core/styler.js";
 
-export function chaiTailwind() {
+export default function chaiTailwind() {
 
   const elements = scanDOM();
 
   applyStyles(elements);
-  
+
 }
 
-document.addEventListener("DOMContentLoaded", chaiTailwind);
+if (typeof window !== "undefined") {
 
-const observer = new MutationObserver(() => {
-
-  chaiTailwind();
-
-});
-
-observer.observe(document.body, {
-
-  childList: true,
-  subtree: true
-});
+  window.chaiTailwind = chaiTailwind;
+  
+}

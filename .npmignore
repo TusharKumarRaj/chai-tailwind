@@ -1,0 +1,6 @@
+src/
+demo/
+assets/
+.gitignore
+README.md
+*.tgz
