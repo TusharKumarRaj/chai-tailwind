@@ -1,6 +1,6 @@
 {
   "name": "chai-tailwind-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/chai-tailwind.js",
   "type": "module",
   "scripts": {
