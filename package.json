@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm run build:esm && npm run build:global",
     "build:esm": "esbuild src/index.js --bundle --format=esm --outfile=dist/chai-tailwind.js",
-    "build:global": "esbuild src/index.js --bundle --format=iife --global-name=chaiTailwind --outfile=dist/chai-tailwind.global.js"
+    "build:global": "esbuild src/browser.js --bundle --format=iife --outfile=dist/chai-tailwind.global.js"
   },
   "keywords": [],
   "author": "",
