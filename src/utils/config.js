@@ -8,7 +8,7 @@ export const config = {
   spacing,
 
   colors: {
-      red: {
+    red: {
       100: "#fee2e2", 
       300: "#fca5a5",
       500: "#ef4444",
@@ -66,6 +66,27 @@ export const config = {
     "5xl": "40px"
   },
 
+  fontWeight: {
+    thin: 100,
+    light: 300,
+    normal: 400,
+    medium: 500,
+    bold: 700,
+  },
+
+  letterSpacing: {
+    tight: "-0.05em",
+    normal: "0",
+    wide: "0.05em",
+  },
+
+  lineHeight: {
+    none: "1",
+    tight: "1.25",
+    normal: "1.5",
+    loose: "2",
+  },
+
   borderRadius: { 
     none: "0px",
     sm: "4px",
@@ -76,10 +97,102 @@ export const config = {
     full: "9999px"
   },
 
+  borderWidth: {
+    DEFAULT: "1px",
+    2: "2px",
+    4: "4px",
+  },
+
   shadows: {
     sm: "0 1px 3px rgba(0,0,0,0.1)",
     DEFAULT: "0 4px 10px rgba(0,0,0,0.1)",
     md: "0 6px 20px rgba(0,0,0,0.15)",
     lg: "0 10px 30px rgba(0,0,0,0.2)"
-  }
+  },
+
+  zIndex: {
+    0: 0,
+    10: 10,
+    20: 20,
+    50: 50,
+    100: 100,
+  },
+
+  transitionTiming: {
+    linear: "linear",
+    in: "ease-in",
+    out: "ease-out",
+    "in-out": "ease-in-out",
+  },
+
+  blur: {
+    none: "0px",
+    sm: "4px",
+    DEFAULT: "8px",
+    md: "12px",
+    lg: "16px",
+    xl: "24px",
+  },
+
+  opacity: {
+    0: "0",
+    5: "0.05",
+    10: "0.1",
+    20: "0.2",
+    25: "0.25",
+    30: "0.3",
+    40: "0.4",
+    50: "0.5",
+    60: "0.6",
+    70: "0.7",
+    75: "0.75",
+    80: "0.8",
+    90: "0.9",
+    95: "0.95",
+    100: "1",
+  },
+
+  display: {
+    block: "block",
+    inline: "inline",
+    "inline-block": "inline-block",
+    flex: "flex",
+    grid: "grid",
+    hidden: "none",
+  },
+
+  textAlign: {
+    left: "left",
+    center: "center",
+    right: "right",
+    justify: "justify",
+  },
+
+  widths: {
+    full: "100%",
+    half: "50%",
+    third: "33.333%",
+    quarter: "25%",
+    screen: "100vw",
+    auto: "auto",
+  },
+
+  heights: {
+    full: "100%",
+    screen: "100vh",
+    auto: "auto",
+  },
+
+  cursor: {
+    pointer: "pointer",
+    default: "default",
+    "not-allowed": "not-allowed",
+  },
+
+  overflow: {
+    hidden: "hidden",
+    auto: "auto",
+    scroll: "scroll",
+    visible: "visible",
+  },
 };

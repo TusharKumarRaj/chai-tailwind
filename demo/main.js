@@ -1,4 +1,4 @@
-import { chaiTailwind } from "../src/index.js";
+import chaiTailwind from "../src/index.js";
 
 document.addEventListener("DOMContentLoaded", chaiTailwind);
 
@@ -10,3 +10,4 @@ observer.observe(document.body, {
   childList: true,
   subtree: true
 });
+

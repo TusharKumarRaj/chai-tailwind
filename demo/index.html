@@ -1,82 +1,471 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ChaiTailwind Demo</title>
+  <title>chai-tailwind · Showcase</title>
 </head>
+<body class="chai-bg-purple-700">
 
- 
+<!-- NAV -->
+<nav class="chai-bg-purple-700 chai-px-12 chai-py-5 chai-flex chai-justify-between chai-items-center chai-border chai-border-purple-500">
+  <div class="chai-flex chai-items-center chai-gap-4">
+    <span class="chai-text-3xl chai-text-white chai-font-bold chai-tracking-tight">☕ chai-tailwind</span>
+    <span class="chai-bg-pink-500 chai-text-white chai-text-xs chai-font-bold chai-px-3 chai-py-1 chai-rounded-full chai-tracking-wide">v1.0</span>
+  </div>
+  <div class="chai-flex chai-gap-6 chai-items-center">
+    <a class="chai-text-purple-300 chai-text-sm chai-font-medium chai-cursor-pointer hover:chai-text-white">Colors</a>
+    <a class="chai-text-purple-300 chai-text-sm chai-font-medium chai-cursor-pointer hover:chai-text-white">Typography</a>
+    <a class="chai-text-purple-300 chai-text-sm chai-font-medium chai-cursor-pointer hover:chai-text-white">Flex & Grid</a>
+    <button class="chai-bg-pink-500 chai-text-white chai-px-5 chai-py-2 chai-rounded-xl chai-text-sm chai-font-bold chai-cursor-pointer chai-transition hover:chai-bg-pink-700">Get Started</button>
+  </div>
+</nav>
 
-<body class="chai-bg-black chai-text-white chai-p-10" style="font-family: Arial, sans-serif;">
-
-  <!-- Title -->
-  <h1 class="chai-text-white chai-p-2">
-    ChaiTailwind Demo
+<!-- HERO -->
+<section class="chai-bg-purple-700 chai-py-20 chai-px-12">
+  <div class="chai-align-center chai-mb-6">
+    <span class="chai-bg-purple-500 chai-text-purple-100 chai-text-xs chai-font-bold chai-px-4 chai-py-2 chai-rounded-full chai-tracking-wide">ZERO DEPENDENCIES · RUNTIME CSS ENGINE</span>
+  </div>
+  <h1 class="chai-text-5xl chai-text-white chai-font-bold chai-align-center chai-leading-tight chai-tracking-tight chai-mb-4">
+    Utility-first CSS.<br/>Your framework. Your rules.
   </h1>
-
-  <p class="chai-m-2">
-    Custom utility-first CSS engine using JavaScript
+  <p class="chai-text-xl chai-text-purple-300 chai-align-center chai-leading-normal chai-mb-10">
+    Add <strong class="chai-text-white">chai-</strong> before any class and it just works — no build step, no config file.
   </p>
-
-  <!-- Color Cards -->
-  <div class="chai-m-3">
-
-    <div class="chai-p-3 chai-m-2 chai-bg-red-500 chai-text-white">
-      Red 500
-    </div>
-
-    <div class="chai-p-3 chai-m-2 chai-bg-blue-500 chai-text-white">
-      Blue 500
-    </div>
-
-    <div class="chai-p-3 chai-m-2 chai-bg-green-500 chai-text-white">
-      Green 500
-    </div>
-
-    <div class="chai-p-3 chai-m-2 chai-bg-yellow-500 chai-text-black">
-      Yellow 500
-    </div>
-
-    <div class="chai-p-3 chai-m-2 chai-bg-purple-500 chai-text-white">
-      Purple 500
-    </div>
-
-    <div class="chai-p-3 chai-m-2 chai-bg-pink-500 chai-text-white">
-      Pink 500 
-    </div>
-
+  <div class="chai-flex chai-justify-center chai-gap-4 chai-mb-16">
+    <button class="chai-bg-pink-500 chai-text-white chai-px-8 chai-py-4 chai-rounded-xl chai-font-bold chai-text-lg chai-shadow-lg chai-cursor-pointer chai-transition hover:chai-bg-pink-700">Download Free</button>
+    <button class="chai-bg-purple-500 chai-text-white chai-px-8 chai-py-4 chai-rounded-xl chai-font-bold chai-text-lg chai-shadow-md chai-cursor-pointer chai-transition hover:chai-bg-purple-700">View Docs</button>
   </div>
 
-  <!-- Hover Buttons -->
-  <h2 class="chai-m-2">Hover Effects</h2>
+  <!-- Stats -->
+  <div class="chai-grid chai-grid-cols-4 chai-gap-6 chai-mx-10">
+    <div class="chai-bg-purple-500 chai-p-8 chai-rounded-xl chai-align-center chai-shadow-md">
+      <div class="chai-text-4xl chai-text-white chai-font-bold">50+</div>
+      <div class="chai-text-purple-100 chai-text-sm chai-mt-2">Utility Classes</div>
+    </div>
+    <div class="chai-bg-pink-500 chai-p-8 chai-rounded-xl chai-align-center chai-shadow-md">
+      <div class="chai-text-4xl chai-text-white chai-font-bold">0</div>
+      <div class="chai-text-pink-100 chai-text-sm chai-mt-2">Dependencies</div>
+    </div>
+    <div class="chai-bg-blue-500 chai-p-8 chai-rounded-xl chai-align-center chai-shadow-md">
+      <div class="chai-text-4xl chai-text-white chai-font-bold">~5KB</div>
+      <div class="chai-text-blue-100 chai-text-sm chai-mt-2">Bundle Size</div>
+    </div>
+    <div class="chai-bg-green-500 chai-p-8 chai-rounded-xl chai-align-center chai-shadow-md">
+      <div class="chai-text-4xl chai-text-white chai-font-bold">Runtime</div>
+      <div class="chai-text-green-100 chai-text-sm chai-mt-2">No Build Step</div>
+    </div>
+  </div>
+</section>
 
-  <button class="chai-p-2 chai-m-2 chai-bg-blue-500 chai-text-white hover:chai-bg-red-500">
-    Hover Blue → Red
-  </button>
+<!-- HOW IT WORKS -->
+<section class="chai-bg-purple-500 chai-py-16 chai-px-12">
+  <div class="chai-text-xs chai-text-purple-100 chai-font-bold chai-tracking-wide chai-align-center chai-mb-3">⚙️ HOW IT WORKS</div>
+  <h2 class="chai-text-4xl chai-text-white chai-font-bold chai-align-center chai-mb-3">Simple. Intuitive. Fast.</h2>
+  <p class="chai-text-purple-100 chai-text-lg chai-align-center chai-mb-10">Add the script, write chai- classes, done.</p>
 
-  <button class="chai-p-2 chai-m-2 chai-bg-green-500 chai-text-white hover:chai-bg-purple-500">
-    Hover Green → Purple
-  </button>
-
-  <button class="chai-p-2 chai-m-2 chai-bg-pink-500 chai-text-white hover:chai-bg-yellow-500">
-    Hover Pink → Yellow
-  </button>
-
-  <!-- Mixed Section -->
-  <h2 class="chai-m-3">Combined Utilities</h2>
-
-  <div class="chai-p-4 chai-m-2 chai-bg-blue-300 chai-text-black">
-    Light blue card with padding and margin
+  <div class="chai-grid chai-grid-cols-3 chai-gap-8 chai-mx-10">
+    <div class="chai-bg-purple-700 chai-p-8 chai-rounded-xl chai-shadow-lg chai-align-center">
+      <div class="chai-text-4xl chai-mb-4">1️⃣</div>
+      <div class="chai-text-white chai-font-bold chai-text-xl chai-mb-3">Add Script</div>
+      <div class="chai-bg-purple-500 chai-p-4 chai-rounded-lg">
+        <p class="chai-text-purple-100 chai-text-sm">&lt;script src=<br/>"chai-tailwind<br/>.global.js"&gt;<br/>&lt;/script&gt;</p>
+      </div>
+    </div>
+    <div class="chai-bg-purple-700 chai-p-8 chai-rounded-xl chai-shadow-lg chai-align-center">
+      <div class="chai-text-4xl chai-mb-4">2️⃣</div>
+      <div class="chai-text-white chai-font-bold chai-text-xl chai-mb-3">Use Classes</div>
+      <div class="chai-bg-purple-500 chai-p-4 chai-rounded-lg">
+        <p class="chai-text-green-300 chai-text-sm">chai-bg-purple-500</p>
+        <p class="chai-text-yellow-300 chai-text-sm">chai-text-white</p>
+        <p class="chai-text-blue-300 chai-text-sm">chai-p-6 chai-rounded-xl</p>
+      </div>
+    </div>
+    <div class="chai-bg-purple-700 chai-p-8 chai-rounded-xl chai-shadow-lg chai-align-center">
+      <div class="chai-text-4xl chai-mb-4">3️⃣</div>
+      <div class="chai-text-white chai-font-bold chai-text-xl chai-mb-3">Styles Apply!</div>
+      <div class="chai-bg-pink-500 chai-text-white chai-p-4 chai-rounded-xl chai-font-medium">
+        Styled automatically at runtime ✨
+      </div>
+    </div>
   </div>
 
-  <div class="chai-p-4 chai-m-2 chai-bg-red-700 chai-text-white">
-    Dark red card
+  <!-- Class anatomy -->
+  <div class="chai-bg-purple-700 chai-p-8 chai-rounded-xl chai-mx-10 chai-mt-8">
+    <p class="chai-text-white chai-font-bold chai-mb-4 chai-align-center">Class Anatomy</p>
+    <div class="chai-flex chai-justify-center chai-gap-2 chai-items-center">
+      <span class="chai-bg-pink-500 chai-text-white chai-px-4 chai-py-3 chai-rounded-lg chai-font-bold">hover:</span>
+      <span class="chai-bg-purple-300 chai-text-purple-700 chai-px-4 chai-py-3 chai-font-bold">chai-</span>
+      <span class="chai-bg-blue-500 chai-text-white chai-px-4 chai-py-3 chai-font-bold">bg</span>
+      <span class="chai-bg-green-500 chai-text-white chai-px-4 chai-py-3 chai-rounded-lg chai-font-bold">-purple-500</span>
+    </div>
+    <div class="chai-flex chai-justify-center chai-gap-2 chai-mt-4">
+      <span class="chai-bg-pink-300 chai-text-pink-700 chai-px-3 chai-py-1 chai-rounded-full chai-text-xs chai-font-bold">optional state</span>
+      <span class="chai-bg-purple-100 chai-text-purple-700 chai-px-3 chai-py-1 chai-rounded-full chai-text-xs chai-font-bold">namespace</span>
+      <span class="chai-bg-blue-100 chai-text-blue-700 chai-px-3 chai-py-1 chai-rounded-full chai-text-xs chai-font-bold">utility</span>
+      <span class="chai-bg-green-100 chai-text-green-700 chai-px-3 chai-py-1 chai-rounded-full chai-text-xs chai-font-bold">value</span>
+    </div>
+  </div>
+</section>
+
+<!-- COLORS -->
+<section class="chai-bg-purple-700 chai-py-16 chai-px-12">
+  <div class="chai-text-xs chai-text-purple-300 chai-font-bold chai-tracking-wide chai-align-center chai-mb-3">🎨 COLORS</div>
+  <h2 class="chai-text-4xl chai-text-white chai-font-bold chai-align-center chai-mb-3">Color Palette</h2>
+  <p class="chai-text-purple-300 chai-align-center chai-mb-10">6 colors × 4 shades · chai-bg-{color}-{shade} · chai-text-{color}-{shade}</p>
+
+  <div class="chai-flex chai-flex-col chai-gap-4 chai-mx-10">
+    <!-- Red -->
+    <div class="chai-flex chai-items-center chai-gap-4">
+      <div class="chai-text-purple-300 chai-text-sm chai-font-bold chai-w-16">Red</div>
+      <div class="chai-bg-red-100 chai-px-8 chai-py-5 chai-rounded-lg chai-flex-1 chai-align-center chai-text-sm chai-font-medium">100</div>
+      <div class="chai-bg-red-300 chai-px-8 chai-py-5 chai-rounded-lg chai-flex-1 chai-align-center chai-text-sm chai-font-medium">300</div>
+      <div class="chai-bg-red-500 chai-text-white chai-px-8 chai-py-5 chai-rounded-lg chai-flex-1 chai-align-center chai-text-sm chai-font-medium">500</div>
+      <div class="chai-bg-red-700 chai-text-white chai-px-8 chai-py-5 chai-rounded-lg chai-flex-1 chai-align-center chai-text-sm chai-font-medium">700</div>
+    </div>
+    <!-- Blue -->
+    <div class="chai-flex chai-items-center chai-gap-4">
+      <div class="chai-text-purple-300 chai-text-sm chai-font-bold chai-w-16">Blue</div>
+      <div class="chai-bg-blue-100 chai-px-8 chai-py-5 chai-rounded-lg chai-flex-1 chai-align-center chai-text-sm chai-font-medium">100</div>
+      <div class="chai-bg-blue-300 chai-px-8 chai-py-5 chai-rounded-lg chai-flex-1 chai-align-center chai-text-sm chai-font-medium">300</div>
+      <div class="chai-bg-blue-500 chai-text-white chai-px-8 chai-py-5 chai-rounded-lg chai-flex-1 chai-align-center chai-text-sm chai-font-medium">500</div>
+      <div class="chai-bg-blue-700 chai-text-white chai-px-8 chai-py-5 chai-rounded-lg chai-flex-1 chai-align-center chai-text-sm chai-font-medium">700</div>
+    </div>
+    <!-- Green -->
+    <div class="chai-flex chai-items-center chai-gap-4">
+      <div class="chai-text-purple-300 chai-text-sm chai-font-bold chai-w-16">Green</div>
+      <div class="chai-bg-green-100 chai-px-8 chai-py-5 chai-rounded-lg chai-flex-1 chai-align-center chai-text-sm chai-font-medium">100</div>
+      <div class="chai-bg-green-300 chai-px-8 chai-py-5 chai-rounded-lg chai-flex-1 chai-align-center chai-text-sm chai-font-medium">300</div>
+      <div class="chai-bg-green-500 chai-text-white chai-px-8 chai-py-5 chai-rounded-lg chai-flex-1 chai-align-center chai-text-sm chai-font-medium">500</div>
+      <div class="chai-bg-green-700 chai-text-white chai-px-8 chai-py-5 chai-rounded-lg chai-flex-1 chai-align-center chai-text-sm chai-font-medium">700</div>
+    </div>
+    <!-- Yellow -->
+    <div class="chai-flex chai-items-center chai-gap-4">
+      <div class="chai-text-purple-300 chai-text-sm chai-font-bold chai-w-16">Yellow</div>
+      <div class="chai-bg-yellow-100 chai-px-8 chai-py-5 chai-rounded-lg chai-flex-1 chai-align-center chai-text-sm chai-font-medium">100</div>
+      <div class="chai-bg-yellow-300 chai-px-8 chai-py-5 chai-rounded-lg chai-flex-1 chai-align-center chai-text-sm chai-font-medium">300</div>
+      <div class="chai-bg-yellow-500 chai-text-white chai-px-8 chai-py-5 chai-rounded-lg chai-flex-1 chai-align-center chai-text-sm chai-font-medium">500</div>
+      <div class="chai-bg-yellow-700 chai-text-white chai-px-8 chai-py-5 chai-rounded-lg chai-flex-1 chai-align-center chai-text-sm chai-font-medium">700</div>
+    </div>
+    <!-- Purple -->
+    <div class="chai-flex chai-items-center chai-gap-4">
+      <div class="chai-text-purple-300 chai-text-sm chai-font-bold chai-w-16">Purple</div>
+      <div class="chai-bg-purple-100 chai-text-purple-700 chai-px-8 chai-py-5 chai-rounded-lg chai-flex-1 chai-align-center chai-text-sm chai-font-medium">100</div>
+      <div class="chai-bg-purple-300 chai-text-purple-700 chai-px-8 chai-py-5 chai-rounded-lg chai-flex-1 chai-align-center chai-text-sm chai-font-medium">300</div>
+      <div class="chai-bg-purple-500 chai-text-white chai-px-8 chai-py-5 chai-rounded-lg chai-flex-1 chai-align-center chai-text-sm chai-font-medium">500</div>
+      <div class="chai-bg-purple-700 chai-text-white chai-border chai-border-purple-500 chai-px-8 chai-py-5 chai-rounded-lg chai-flex-1 chai-align-center chai-text-sm chai-font-medium">700</div>
+    </div>
+    <!-- Pink -->
+    <div class="chai-flex chai-items-center chai-gap-4">
+      <div class="chai-text-purple-300 chai-text-sm chai-font-bold chai-w-16">Pink</div>
+      <div class="chai-bg-pink-100 chai-px-8 chai-py-5 chai-rounded-lg chai-flex-1 chai-align-center chai-text-sm chai-font-medium">100</div>
+      <div class="chai-bg-pink-300 chai-px-8 chai-py-5 chai-rounded-lg chai-flex-1 chai-align-center chai-text-sm chai-font-medium">300</div>
+      <div class="chai-bg-pink-500 chai-text-white chai-px-8 chai-py-5 chai-rounded-lg chai-flex-1 chai-align-center chai-text-sm chai-font-medium">500</div>
+      <div class="chai-bg-pink-700 chai-text-white chai-px-8 chai-py-5 chai-rounded-lg chai-flex-1 chai-align-center chai-text-sm chai-font-medium">700</div>
+    </div>
   </div>
 
-  <!-- Script -->
-    <script type="module" src="main.js"></script>
- 
+  <!-- Text color demo -->
+  <div class="chai-bg-purple-500 chai-p-8 chai-rounded-xl chai-mx-10 chai-mt-8">
+    <p class="chai-text-white chai-font-bold chai-mb-4">Text Colors · chai-text-{color}-{shade}</p>
+    <div class="chai-flex chai-gap-6 chai-flex-wrap">
+      <span class="chai-text-red-300 chai-text-xl chai-font-bold">Red 300</span>
+      <span class="chai-text-blue-300 chai-text-xl chai-font-bold">Blue 300</span>
+      <span class="chai-text-green-300 chai-text-xl chai-font-bold">Green 300</span>
+      <span class="chai-text-yellow-300 chai-text-xl chai-font-bold">Yellow 300</span>
+      <span class="chai-text-pink-300 chai-text-xl chai-font-bold">Pink 300</span>
+      <span class="chai-text-white chai-text-xl chai-font-bold">White</span>
+    </div>
+  </div>
+</section>
 
+<!-- TYPOGRAPHY -->
+<section class="chai-bg-purple-500 chai-py-16 chai-px-12">
+  <div class="chai-text-xs chai-text-purple-100 chai-font-bold chai-tracking-wide chai-align-center chai-mb-3">🔤 TYPOGRAPHY</div>
+  <h2 class="chai-text-4xl chai-text-white chai-font-bold chai-align-center chai-mb-3">Font Sizes & Weights</h2>
+  <p class="chai-text-purple-100 chai-align-center chai-mb-10">9 sizes · 5 weights · letter-spacing · line-height</p>
+
+  <div class="chai-grid chai-grid-cols-2 chai-gap-8 chai-mx-10">
+    <!-- Sizes -->
+    <div class="chai-bg-purple-700 chai-p-8 chai-rounded-xl chai-shadow-lg">
+      <p class="chai-text-purple-300 chai-text-xs chai-font-bold chai-tracking-wide chai-mb-6">SIZE SCALE · chai-text-{size}</p>
+      <div class="chai-text-5xl chai-text-white chai-font-bold chai-leading-tight chai-mb-2">5xl · 40px</div>
+      <div class="chai-text-4xl chai-text-white chai-font-bold chai-leading-tight chai-mb-2">4xl · 32px</div>
+      <div class="chai-text-3xl chai-text-white chai-font-bold chai-mb-2">3xl · 28px</div>
+      <div class="chai-text-2xl chai-text-purple-100 chai-mb-2">2xl · 24px</div>
+      <div class="chai-text-xl chai-text-purple-200 chai-mb-2">xl · 20px</div>
+      <div class="chai-text-lg chai-text-purple-300 chai-mb-2">lg · 18px</div>
+      <div class="chai-text-base chai-text-purple-300 chai-mb-2">base · 16px</div>
+      <div class="chai-text-sm chai-text-purple-400 chai-mb-2">sm · 14px</div>
+      <div class="chai-text-xs chai-text-purple-400">xs · 12px</div>
+    </div>
+    <!-- Weights + extras -->
+    <div class="chai-bg-purple-700 chai-p-8 chai-rounded-xl chai-shadow-lg">
+      <p class="chai-text-purple-300 chai-text-xs chai-font-bold chai-tracking-wide chai-mb-6">FONT WEIGHTS · chai-font-{weight}</p>
+      <div class="chai-text-2xl chai-text-white chai-font-bold chai-mb-4">Bold — chai-font-bold</div>
+      <div class="chai-text-2xl chai-text-white chai-font-medium chai-mb-4">Medium — chai-font-medium</div>
+      <div class="chai-text-2xl chai-text-white chai-font-normal chai-mb-4">Normal — chai-font-normal</div>
+      <div class="chai-text-2xl chai-text-white chai-font-light chai-mb-4">Light — chai-font-light</div>
+      <p class="chai-text-purple-300 chai-text-xs chai-font-bold chai-tracking-wide chai-mb-3 chai-mt-6">LETTER SPACING · chai-tracking-{value}</p>
+      <div class="chai-text-lg chai-text-white chai-tracking-tight chai-mb-2">Tight tracking — chai-tracking-tight</div>
+      <div class="chai-text-lg chai-text-white chai-tracking-normal chai-mb-2">Normal tracking — chai-tracking-normal</div>
+      <div class="chai-text-lg chai-text-white chai-tracking-wide">Wide tracking — chai-tracking-wide</div>
+    </div>
+  </div>
+</section>
+
+<!-- SPACING -->
+<section class="chai-bg-purple-700 chai-py-16 chai-px-12">
+  <div class="chai-text-xs chai-text-purple-300 chai-font-bold chai-tracking-wide chai-align-center chai-mb-3">📐 SPACING</div>
+  <h2 class="chai-text-4xl chai-text-white chai-font-bold chai-align-center chai-mb-3">Padding & Margin</h2>
+  <p class="chai-text-purple-300 chai-align-center chai-mb-10">chai-p-{n} · chai-px-{n} · chai-py-{n} · chai-m-{n} · chai-mx-{n} · chai-my-{n} · n × 4px</p>
+
+  <div class="chai-grid chai-grid-cols-2 chai-gap-8 chai-mx-10">
+    <div class="chai-bg-purple-500 chai-p-8 chai-rounded-xl chai-shadow-lg">
+      <p class="chai-text-purple-100 chai-text-xs chai-font-bold chai-tracking-wide chai-mb-6">PADDING SCALE</p>
+      <div class="chai-bg-pink-500 chai-p-2 chai-rounded-md chai-text-white chai-text-xs chai-font-bold chai-mb-3">chai-p-2 · 8px padding</div>
+      <div class="chai-bg-pink-500 chai-p-4 chai-rounded-md chai-text-white chai-text-xs chai-font-bold chai-mb-3">chai-p-4 · 16px padding</div>
+      <div class="chai-bg-pink-500 chai-p-6 chai-rounded-md chai-text-white chai-text-xs chai-font-bold chai-mb-3">chai-p-6 · 24px padding</div>
+      <div class="chai-bg-pink-500 chai-p-8 chai-rounded-md chai-text-white chai-text-xs chai-font-bold">chai-p-8 · 32px padding</div>
+    </div>
+    <div class="chai-bg-purple-500 chai-p-8 chai-rounded-xl chai-shadow-lg">
+      <p class="chai-text-purple-100 chai-text-xs chai-font-bold chai-tracking-wide chai-mb-6">DIRECTIONAL PADDING</p>
+      <div class="chai-bg-purple-700 chai-rounded-xl chai-p-4">
+        <div class="chai-bg-blue-500 chai-px-8 chai-py-2 chai-rounded-md chai-text-white chai-text-xs chai-font-bold chai-mb-3 chai-align-center">chai-px-8 (horizontal only)</div>
+        <div class="chai-bg-green-500 chai-px-2 chai-py-6 chai-rounded-md chai-text-white chai-text-xs chai-font-bold chai-mb-3 chai-align-center">chai-py-6 (vertical only)</div>
+        <div class="chai-bg-yellow-500 chai-px-10 chai-py-4 chai-rounded-md chai-text-white chai-text-xs chai-font-bold chai-align-center">chai-px-10 chai-py-4 (both)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FLEX & GRID -->
+<section class="chai-bg-purple-500 chai-py-16 chai-px-12">
+  <div class="chai-text-xs chai-text-purple-100 chai-font-bold chai-tracking-wide chai-align-center chai-mb-3">📦 FLEX & GRID</div>
+  <h2 class="chai-text-4xl chai-text-white chai-font-bold chai-align-center chai-mb-3">Layout System</h2>
+  <p class="chai-text-purple-100 chai-align-center chai-mb-10">chai-flex · chai-grid-cols-{n} · chai-gap-{n} · chai-justify-{v} · chai-items-{v}</p>
+
+  <!-- Justify demos -->
+  <div class="chai-grid chai-grid-cols-2 chai-gap-6 chai-mx-10 chai-mb-8">
+    <div class="chai-bg-purple-700 chai-p-6 chai-rounded-xl">
+      <p class="chai-text-purple-300 chai-text-xs chai-font-bold chai-mb-4">chai-justify-between + chai-gap-4</p>
+      <div class="chai-flex chai-justify-between chai-gap-4 chai-items-center">
+        <div class="chai-bg-pink-500 chai-text-white chai-px-5 chai-py-4 chai-rounded-lg chai-font-bold chai-text-sm">A</div>
+        <div class="chai-bg-pink-500 chai-text-white chai-px-5 chai-py-4 chai-rounded-lg chai-font-bold chai-text-sm">B</div>
+        <div class="chai-bg-pink-500 chai-text-white chai-px-5 chai-py-4 chai-rounded-lg chai-font-bold chai-text-sm">C</div>
+      </div>
+    </div>
+    <div class="chai-bg-purple-700 chai-p-6 chai-rounded-xl">
+      <p class="chai-text-purple-300 chai-text-xs chai-font-bold chai-mb-4">chai-justify-center + chai-gap-4</p>
+      <div class="chai-flex chai-justify-center chai-gap-4 chai-items-center">
+        <div class="chai-bg-blue-500 chai-text-white chai-px-5 chai-py-4 chai-rounded-lg chai-font-bold chai-text-sm">A</div>
+        <div class="chai-bg-blue-500 chai-text-white chai-px-5 chai-py-4 chai-rounded-lg chai-font-bold chai-text-sm">B</div>
+        <div class="chai-bg-blue-500 chai-text-white chai-px-5 chai-py-4 chai-rounded-lg chai-font-bold chai-text-sm">C</div>
+      </div>
+    </div>
+    <div class="chai-bg-purple-700 chai-p-6 chai-rounded-xl">
+      <p class="chai-text-purple-300 chai-text-xs chai-font-bold chai-mb-4">chai-items-center (mixed heights)</p>
+      <div class="chai-flex chai-gap-4 chai-items-center">
+        <div class="chai-bg-green-500 chai-text-white chai-px-5 chai-py-10 chai-rounded-lg chai-font-bold chai-text-sm">Tall</div>
+        <div class="chai-bg-green-500 chai-text-white chai-px-5 chai-py-4 chai-rounded-lg chai-font-bold chai-text-sm">Mid</div>
+        <div class="chai-bg-green-500 chai-text-white chai-px-5 chai-py-2 chai-rounded-lg chai-font-bold chai-text-sm">Short</div>
+      </div>
+    </div>
+    <div class="chai-bg-purple-700 chai-p-6 chai-rounded-xl">
+      <p class="chai-text-purple-300 chai-text-xs chai-font-bold chai-mb-4">chai-flex-col + chai-gap-4</p>
+      <div class="chai-flex-col chai-gap-4">
+        <div class="chai-bg-yellow-500 chai-text-white chai-px-5 chai-py-3 chai-rounded-lg chai-font-bold chai-text-sm chai-align-center">Row 1</div>
+        <div class="chai-bg-yellow-500 chai-text-white chai-px-5 chai-py-3 chai-rounded-lg chai-font-bold chai-text-sm chai-align-center">Row 2</div>
+        <div class="chai-bg-yellow-500 chai-text-white chai-px-5 chai-py-3 chai-rounded-lg chai-font-bold chai-text-sm chai-align-center">Row 3</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Grid cols demo -->
+  <div class="chai-bg-purple-700 chai-p-8 chai-rounded-xl chai-mx-10">
+    <p class="chai-text-purple-300 chai-text-xs chai-font-bold chai-mb-6">CSS GRID · chai-grid-cols-{n} + chai-gap-{n}</p>
+    <p class="chai-text-purple-400 chai-text-xs chai-mb-3">chai-grid-cols-2</p>
+    <div class="chai-grid chai-grid-cols-2 chai-gap-4 chai-mb-6">
+      <div class="chai-bg-red-500 chai-text-white chai-p-4 chai-rounded-lg chai-font-bold chai-align-center">1</div>
+      <div class="chai-bg-red-500 chai-text-white chai-p-4 chai-rounded-lg chai-font-bold chai-align-center">2</div>
+    </div>
+    <p class="chai-text-purple-400 chai-text-xs chai-mb-3">chai-grid-cols-3</p>
+    <div class="chai-grid chai-grid-cols-3 chai-gap-4 chai-mb-6">
+      <div class="chai-bg-blue-500 chai-text-white chai-p-4 chai-rounded-lg chai-font-bold chai-align-center">1</div>
+      <div class="chai-bg-blue-500 chai-text-white chai-p-4 chai-rounded-lg chai-font-bold chai-align-center">2</div>
+      <div class="chai-bg-blue-500 chai-text-white chai-p-4 chai-rounded-lg chai-font-bold chai-align-center">3</div>
+    </div>
+    <p class="chai-text-purple-400 chai-text-xs chai-mb-3">chai-grid-cols-4</p>
+    <div class="chai-grid chai-grid-cols-4 chai-gap-4">
+      <div class="chai-bg-green-500 chai-text-white chai-p-4 chai-rounded-lg chai-font-bold chai-align-center">1</div>
+      <div class="chai-bg-green-500 chai-text-white chai-p-4 chai-rounded-lg chai-font-bold chai-align-center">2</div>
+      <div class="chai-bg-green-500 chai-text-white chai-p-4 chai-rounded-lg chai-font-bold chai-align-center">3</div>
+      <div class="chai-bg-green-500 chai-text-white chai-p-4 chai-rounded-lg chai-font-bold chai-align-center">4</div>
+    </div>
+  </div>
+</section>
+
+<!-- RADIUS & SHADOWS -->
+<section class="chai-bg-purple-700 chai-py-16 chai-px-12">
+  <div class="chai-text-xs chai-text-purple-300 chai-font-bold chai-tracking-wide chai-align-center chai-mb-3">⬛ RADIUS & 🔦 SHADOWS</div>
+  <h2 class="chai-text-4xl chai-text-white chai-font-bold chai-align-center chai-mb-10">Rounded Corners & Depth</h2>
+
+  <div class="chai-grid chai-grid-cols-2 chai-gap-8 chai-mx-10">
+    <!-- Radius -->
+    <div class="chai-bg-purple-500 chai-p-8 chai-rounded-xl chai-shadow-lg">
+      <p class="chai-text-purple-100 chai-text-xs chai-font-bold chai-tracking-wide chai-mb-6">BORDER RADIUS · chai-rounded-{variant}</p>
+      <div class="chai-flex chai-gap-4 chai-items-end chai-flex-wrap">
+        <div class="chai-align-center">
+          <div class="chai-bg-pink-500 chai-text-white chai-p-6 chai-rounded-none chai-font-bold chai-text-xs">none</div>
+          <p class="chai-text-purple-200 chai-text-xs chai-mt-2">0px</p>
+        </div>
+        <div class="chai-align-center">
+          <div class="chai-bg-pink-500 chai-text-white chai-p-6 chai-rounded-sm chai-font-bold chai-text-xs">sm</div>
+          <p class="chai-text-purple-200 chai-text-xs chai-mt-2">4px</p>
+        </div>
+        <div class="chai-align-center">
+          <div class="chai-bg-pink-500 chai-text-white chai-p-6 chai-rounded-md chai-font-bold chai-text-xs">md</div>
+          <p class="chai-text-purple-200 chai-text-xs chai-mt-2">10px</p>
+        </div>
+        <div class="chai-align-center">
+          <div class="chai-bg-pink-500 chai-text-white chai-p-6 chai-rounded-lg chai-font-bold chai-text-xs">lg</div>
+          <p class="chai-text-purple-200 chai-text-xs chai-mt-2">12px</p>
+        </div>
+        <div class="chai-align-center">
+          <div class="chai-bg-pink-500 chai-text-white chai-p-6 chai-rounded-xl chai-font-bold chai-text-xs">xl</div>
+          <p class="chai-text-purple-200 chai-text-xs chai-mt-2">16px</p>
+        </div>
+        <div class="chai-align-center">
+          <div class="chai-bg-pink-500 chai-text-white chai-px-6 chai-py-6 chai-rounded-full chai-font-bold chai-text-xs">full</div>
+          <p class="chai-text-purple-200 chai-text-xs chai-mt-2">9999px</p>
+        </div>
+      </div>
+    </div>
+    <!-- Shadows -->
+    <div class="chai-bg-purple-500 chai-p-8 chai-rounded-xl chai-shadow-lg">
+      <p class="chai-text-purple-100 chai-text-xs chai-font-bold chai-tracking-wide chai-mb-6">BOX SHADOW · chai-shadow-{size}</p>
+      <div class="chai-flex chai-flex-col chai-gap-6">
+        <div class="chai-bg-purple-100 chai-p-6 chai-rounded-xl chai-shadow-sm chai-align-center">
+          <div class="chai-text-purple-700 chai-font-bold">chai-shadow-sm</div>
+          <div class="chai-text-purple-500 chai-text-xs">subtle lift</div>
+        </div>
+        <div class="chai-bg-purple-100 chai-p-6 chai-rounded-xl chai-shadow-md chai-align-center">
+          <div class="chai-text-purple-700 chai-font-bold">chai-shadow-md</div>
+          <div class="chai-text-purple-500 chai-text-xs">medium depth</div>
+        </div>
+        <div class="chai-bg-purple-100 chai-p-6 chai-rounded-xl chai-shadow-lg chai-align-center">
+          <div class="chai-text-purple-700 chai-font-bold">chai-shadow-lg</div>
+          <div class="chai-text-purple-500 chai-text-xs">strong elevation</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOVER -->
+<section class="chai-bg-purple-500 chai-py-16 chai-px-12">
+  <div class="chai-text-xs chai-text-purple-100 chai-font-bold chai-tracking-wide chai-align-center chai-mb-3">🖱️ HOVER STATES</div>
+  <h2 class="chai-text-4xl chai-text-white chai-font-bold chai-align-center chai-mb-3">Interactive Elements</h2>
+  <p class="chai-text-purple-100 chai-align-center chai-mb-10">hover:chai-bg-{color}-{shade} · chai-transition · chai-cursor-pointer</p>
+
+  <div class="chai-flex chai-justify-center chai-gap-6 chai-flex-wrap chai-mx-10 chai-mb-10">
+    <button class="chai-bg-purple-700 chai-text-white chai-px-8 chai-py-4 chai-rounded-xl chai-font-bold chai-text-lg chai-shadow-lg chai-transition chai-cursor-pointer hover:chai-bg-pink-500">Hover → Pink</button>
+    <button class="chai-bg-blue-500 chai-text-white chai-px-8 chai-py-4 chai-rounded-xl chai-font-bold chai-text-lg chai-shadow-lg chai-transition chai-cursor-pointer hover:chai-bg-blue-700">Hover → Darker</button>
+    <button class="chai-bg-green-500 chai-text-white chai-px-8 chai-py-4 chai-rounded-xl chai-font-bold chai-text-lg chai-shadow-lg chai-transition chai-cursor-pointer hover:chai-bg-green-700">Hover → Dark</button>
+    <button class="chai-bg-pink-500 chai-text-white chai-px-8 chai-py-4 chai-rounded-xl chai-font-bold chai-text-lg chai-shadow-lg chai-transition chai-cursor-pointer hover:chai-bg-purple-700">Hover → Purple</button>
+    <button class="chai-bg-yellow-500 chai-text-white chai-px-8 chai-py-4 chai-rounded-xl chai-font-bold chai-text-lg chai-shadow-lg chai-transition chai-cursor-pointer hover:chai-bg-yellow-700">Hover → Dark</button>
+  </div>
+
+  <div class="chai-bg-purple-700 chai-p-8 chai-rounded-xl chai-mx-10">
+    <p class="chai-text-purple-300 chai-text-xs chai-font-bold chai-mb-4">Usage Example</p>
+    <div class="chai-flex chai-gap-4 chai-items-start">
+      <div class="chai-bg-purple-500 chai-p-6 chai-rounded-lg chai-flex-1">
+        <p class="chai-text-green-300 chai-text-sm">&lt;button class="</p>
+        <p class="chai-text-yellow-300 chai-text-sm">  chai-bg-blue-500</p>
+        <p class="chai-text-pink-300 chai-text-sm">  hover:chai-bg-blue-700</p>
+        <p class="chai-text-yellow-300 chai-text-sm">  chai-transition</p>
+        <p class="chai-text-yellow-300 chai-text-sm">  chai-cursor-pointer</p>
+        <p class="chai-text-yellow-300 chai-text-sm">  chai-px-6 chai-py-3</p>
+        <p class="chai-text-yellow-300 chai-text-sm">  chai-rounded-xl</p>
+        <p class="chai-text-yellow-300 chai-text-sm">  chai-font-bold</p>
+        <p class="chai-text-green-300 chai-text-sm">"&gt;Click me&lt;/button&gt;</p>
+      </div>
+      <div class="chai-flex chai-items-center chai-justify-center chai-flex-1">
+        <button class="chai-bg-blue-500 chai-text-white chai-px-8 chai-py-5 chai-rounded-xl chai-font-bold chai-text-xl chai-shadow-lg chai-transition chai-cursor-pointer hover:chai-bg-blue-700">Click me</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHEAT SHEET -->
+<section class="chai-bg-purple-700 chai-py-16 chai-px-12">
+  <div class="chai-text-xs chai-text-purple-300 chai-font-bold chai-tracking-wide chai-align-center chai-mb-3">📋 QUICK REFERENCE</div>
+  <h2 class="chai-text-4xl chai-text-white chai-font-bold chai-align-center chai-mb-10">Cheat Sheet</h2>
+
+  <div class="chai-grid chai-grid-cols-3 chai-gap-6 chai-mx-10">
+    <div class="chai-bg-purple-500 chai-p-6 chai-rounded-xl chai-shadow-md">
+      <p class="chai-text-white chai-font-bold chai-mb-4">🎨 Colors</p>
+      <p class="chai-text-purple-100 chai-text-xs chai-mb-1">chai-bg-{color}-{100/300/500/700}</p>
+      <p class="chai-text-purple-100 chai-text-xs chai-mb-1">chai-text-{color}-{shade}</p>
+      <p class="chai-text-purple-100 chai-text-xs chai-mb-1">chai-border-{color}-{shade}</p>
+      <p class="chai-text-purple-200 chai-text-xs chai-mt-3">red · blue · green · yellow · purple · pink</p>
+    </div>
+    <div class="chai-bg-purple-500 chai-p-6 chai-rounded-xl chai-shadow-md">
+      <p class="chai-text-white chai-font-bold chai-mb-4">🔤 Typography</p>
+      <p class="chai-text-purple-100 chai-text-xs chai-mb-1">chai-text-{xs/sm/base/lg/xl/2xl/3xl/4xl/5xl}</p>
+      <p class="chai-text-purple-100 chai-text-xs chai-mb-1">chai-font-{thin/light/normal/medium/bold}</p>
+      <p class="chai-text-purple-100 chai-text-xs chai-mb-1">chai-tracking-{tight/normal/wide}</p>
+      <p class="chai-text-purple-100 chai-text-xs chai-mb-1">chai-leading-{none/tight/normal/loose}</p>
+      <p class="chai-text-purple-100 chai-text-xs">chai-align-{left/center/right}</p>
+    </div>
+    <div class="chai-bg-purple-500 chai-p-6 chai-rounded-xl chai-shadow-md">
+      <p class="chai-text-white chai-font-bold chai-mb-4">📐 Spacing</p>
+      <p class="chai-text-purple-100 chai-text-xs chai-mb-1">chai-p-{0..20} · chai-m-{0..20}</p>
+      <p class="chai-text-purple-100 chai-text-xs chai-mb-1">chai-px-{n} · chai-py-{n}</p>
+      <p class="chai-text-purple-100 chai-text-xs chai-mb-1">chai-mx-{n} · chai-my-{n}</p>
+      <p class="chai-text-purple-100 chai-text-xs chai-mb-1">chai-gap-{n}</p>
+      <p class="chai-text-purple-200 chai-text-xs chai-mt-3">n × 4px = size</p>
+    </div>
+    <div class="chai-bg-purple-500 chai-p-6 chai-rounded-xl chai-shadow-md">
+      <p class="chai-text-white chai-font-bold chai-mb-4">📦 Layout</p>
+      <p class="chai-text-purple-100 chai-text-xs chai-mb-1">chai-flex · chai-flex-col · chai-flex-row</p>
+      <p class="chai-text-purple-100 chai-text-xs chai-mb-1">chai-justify-{start/center/end/between/around}</p>
+      <p class="chai-text-purple-100 chai-text-xs chai-mb-1">chai-items-{start/center/end/stretch}</p>
+      <p class="chai-text-purple-100 chai-text-xs chai-mb-1">chai-grid-cols-{1/2/3/4/5/6}</p>
+      <p class="chai-text-purple-100 chai-text-xs">chai-w-{full/half/third/quarter}</p>
+    </div>
+    <div class="chai-bg-purple-500 chai-p-6 chai-rounded-xl chai-shadow-md">
+      <p class="chai-text-white chai-font-bold chai-mb-4">⬛ Decoration</p>
+      <p class="chai-text-purple-100 chai-text-xs chai-mb-1">chai-rounded-{none/sm/md/lg/xl/full}</p>
+      <p class="chai-text-purple-100 chai-text-xs chai-mb-1">chai-shadow-{sm/md/lg}</p>
+      <p class="chai-text-purple-100 chai-text-xs chai-mb-1">chai-border · chai-border-{color}-{shade}</p>
+      <p class="chai-text-purple-100 chai-text-xs chai-mb-1">chai-opacity-{0..100}</p>
+    </div>
+    <div class="chai-bg-purple-500 chai-p-6 chai-rounded-xl chai-shadow-md">
+      <p class="chai-text-white chai-font-bold chai-mb-4">🖱️ Interaction</p>
+      <p class="chai-text-purple-100 chai-text-xs chai-mb-1">hover:chai-bg-{color}-{shade}</p>
+      <p class="chai-text-purple-100 chai-text-xs chai-mb-1">chai-transition · chai-duration-{ms}</p>
+      <p class="chai-text-purple-100 chai-text-xs chai-mb-1">chai-cursor-{pointer/default}</p>
+      <p class="chai-text-purple-100 chai-text-xs chai-mb-1">chai-overflow-{hidden/auto/scroll}</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="chai-bg-purple-700 chai-border chai-border-purple-500 chai-py-12 chai-px-12">
+  <div class="chai-flex chai-justify-between chai-items-center">
+    <div>
+      <div class="chai-text-2xl chai-text-white chai-font-bold chai-mb-2">☕ chai-tailwind</div>
+      <div class="chai-text-purple-300 chai-text-sm">Built to show how CSS utility engines work under the hood.</div>
+      <div class="chai-text-purple-400 chai-text-xs chai-mt-2">No magic. Just JavaScript, the DOM, and your classes.</div>
+    </div>
+    <div class="chai-flex chai-gap-4">
+      <div class="chai-bg-purple-500 chai-text-white chai-px-6 chai-py-3 chai-rounded-xl chai-font-bold chai-text-sm chai-cursor-pointer chai-transition hover:chai-bg-pink-500">GitHub →</div>
+      <div class="chai-bg-pink-500 chai-text-white chai-px-6 chai-py-3 chai-rounded-xl chai-font-bold chai-text-sm chai-cursor-pointer chai-transition hover:chai-bg-pink-700">Get Started →</div>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="main.js"></script>
 </body>
 </html>
